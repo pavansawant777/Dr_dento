@@ -24,15 +24,16 @@
         display: flex;
         justify-content: center;
       }
-       .footer{
+       .footer-content{
         width: 33.3%;
        }
-       .h3{
+       h3{
         font-size: 28px;
         margin-bottom: 15px;
         text-align: center;
        }
-       .footer-content .p{
+         
+       .footer-content p{
         width: 190px;
         margin: auto;
         padding: 7px;
@@ -42,13 +43,49 @@
         text-align: center;
        }
        .list{
-        padding: 0;
+        padding: 0; 
        }
+       .list li{
+        width: auto;
+        text-align: center;
+        list-style-type: none;
+        padding: 7px;
+        position: relative;
+       }
+       .list li::before{
+        content: '';
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 100%;
+        width: 0;
+        height: 2px;
+        background:#fff;
+        transition-duration: .5s;
+       }
+       .list li:hover::before{
+            width: 70px;
+       }
+       .bottom-bar{
+        background: rgb(115, 244, 235);
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 60px;
+       }
+       .bottom-bar p{
+        color: black;
+        margin: 0;
+        font-size: 16px;
+        padding: 7px;
+       }
+
+
         /* socail iocon*/
          
 /* From Uiverse.io by david-mohseni */ 
 .wrapper {
   display: inline-flex;
+  text-align: center;
   list-style: none;
   height: 120px;
   width: 100%;
@@ -59,7 +96,9 @@
 
 .wrapper .icon {
   position: relative;
+  padding: 0;
   background:black;
+  text-align: center;
   border-radius: 50%;
   margin: 10px;
   width: 50px;
@@ -145,7 +184,7 @@
   padding: 0 1rem;
   color: #fff;
   font-size: 15px;
-  border: 1px solid #5e4dcd;
+  border: 1px solid rgb(115, 244, 235);
   border-radius: 6px 0 0 6px;
   background-color: transparent;
 }
@@ -155,7 +194,7 @@
   padding: .5em 1em;
   border: none;
   border-radius: 0 6px 6px 0;
-  background-color: #5e4dcd;
+  background-color: rgb(115, 244, 235);
   color: #fff;
   font-size: 15px;
   cursor: pointer;
@@ -163,7 +202,7 @@
 }
 
 .button--submit:hover {
-  background-color: #5e5dcd;
+  background-color:grey;
 }
 
 .input:focus, .input:focus-visible {
@@ -176,21 +215,23 @@
 <body>
     <footer>
         <div class="container">
+          <div class="footer-content-3"> 
             <div class="footer-content">
-                <i src="img/Dr.dento_logo_200x-footer.avif"></i>
-                <p>We care for your oral hygiene as much as we care for you to<br>
+                 
+                <p>We care for your oral hygiene as much as we care for you to
                    smile confidently all day long. Our products are backed by <br>
-                   extensive innovative research and are ergonomically designed <br>
+                   extensive innovative research and are ergonomically designed 
                    to give you a smooth yet effective oral care experiemce.</p>
                    <br>
-                   <p>4A, 4th floor, Trade World C,<br>
+                   <p>  4A, 4th floor, Trade World C,
                       next to BSE, Kamala Mills Compound,<br>
                       Senapati Bapat Marg,<br>
                       Lower PArel, Mumbai -400013
-                   </p><br>
-                  <h3>Call Us: +917045519999</h3>
+                   </p>
+                  <h4>Call Us:
+                    +917045519999</h4>
 <br>
-                  <i  ><p>Email:smile@drdento.com</p> </i>
+                <i class="fa fa-envelope">Email:smile@drdento.com </i> 
                   <br>
                   <h2>FOLLOW US</h2>
                   <!-- From Uiverse.io by david-mohseni --> 
@@ -263,6 +304,8 @@
     <input class="button--submit" value="Subscribe" type="submit"></div>
             </div>
         </div>
+      </div>
+        <!--bottom bar-->
         <div class="bottom-bar">
           <p>&copy; 2024 White Tusk Healthcare Private Limited. All Right Reserverd.</p>
         </div>
