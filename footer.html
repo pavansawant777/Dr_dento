@@ -6,22 +6,115 @@
     <title>footer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+      /* 1st part*/
+      *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: white;
+      }
+      footer{
+        background-color:black;
+        padding-top: 50px;
+      }
+      .container{
+        width: 1140px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+      }
+       .footer-content{
+        width: 33.3%;
+       }
+       .footer-content-3{
+        width: 33.3%;
+       }
+       .h3{
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+       }
+       .h2{
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+       }
+        
+  
+       .footer-content p{
+        width: 300px;
+        margin:auto;
+        font-size: 14px;
+        font-weight: lighter;
+        font-stretch: semi-expanded;
+        padding: 8px;
+        font-family:Arial, Helvetica, sans-serif;
+
+       }
+       .footer-content ul{
+        text-align:center;
+       }
+       .list{
+        padding: 0; 
+       }
+       .list li{
+        width: auto;
+        text-align: left;
+        list-style-type: none;
+        padding: 7px;
+        position: relative;
+       }
+       .list li::before{
+        content: '';
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left:10%;
+        top: 100%;
+        width: 0;
+        height: 3px;
+        background:#fff;
+        transition-duration: .5s;
+       }
+       .list li:hover::before{
+            width: 70px;
+       }
+       .footer-content-right{
+        text-align: left;
+       }
+       .bottom-bar{
+        background: rgb(115, 244, 235);
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 60px;
+       }
+       .bottom-bar p{
+        color: black;
+        margin: 0;
+        font-size: 16px;
+        padding: 7px;
+       }
+
+
         /* socail iocon*/
          
 /* From Uiverse.io by david-mohseni */ 
 .wrapper {
   display: inline-flex;
+  text-align: center;
   list-style: none;
-  height: 120px;
+  height: 100%;
   width: 100%;
-  padding-top: 40px;
+  padding-top: 20px;
   font-family: "Poppins", sans-serif;
   justify-content: center;
 }
 
 .wrapper .icon {
   position: relative;
-  background: #fff;
+  padding: 0;
+  background:black;
+  text-align: center;
   border-radius: 50%;
   margin: 10px;
   width: 50px;
@@ -37,7 +130,7 @@
 }
 
 .wrapper .tooltip {
-  position: absolute;
+  position:absolute;
   top: 0;
   font-size: 14px;
   background: #fff;
@@ -107,7 +200,7 @@
   padding: 0 1rem;
   color: #fff;
   font-size: 15px;
-  border: 1px solid #5e4dcd;
+  border: 1px solid rgb(115, 244, 235);
   border-radius: 6px 0 0 6px;
   background-color: transparent;
 }
@@ -117,7 +210,7 @@
   padding: .5em 1em;
   border: none;
   border-radius: 0 6px 6px 0;
-  background-color: #5e4dcd;
+  background-color: rgb(115, 244, 235);
   color: #fff;
   font-size: 15px;
   cursor: pointer;
@@ -125,7 +218,7 @@
 }
 
 .button--submit:hover {
-  background-color: #5e5dcd;
+  background-color:grey;
 }
 
 .input:focus, .input:focus-visible {
@@ -138,27 +231,47 @@
 <body>
     <footer>
         <div class="container">
+          <div class="footer-content-3"> 
             <div class="footer-content">
-                <i src="img/Dr.dento_logo_200x-footer.avif"></i>
-                <p>We care for your oral hygiene as much as we care for you to<br>
-                   smile confidently all day long. Our products are backed by <br>
-                   extensive innovative research and are ergonomically designed <br>
+              <div class="imgset"> 
+                 <img src="img/Dr.dento_logo_200x-footer.avif" style="display: flex;">
+                </div>
+                <p>We care for your oral hygiene as much as we care for you to
+                   smile confidently all day long. Our products are backed by 
+                   extensive innovative research and are ergonomically designed 
                    to give you a smooth yet effective oral care experiemce.</p>
-                   
-                   <p>4A, 4th floor, Trade World C,<br>
-                      next to BSE, Kamala Mills Compound,<br>
-                      Senapati Bapat Marg,<br>
-                      Lower PArel, Mumbai -400013
-                   </p>
-                  <h3>Call Us: +917045519999</h3>
-
-                  <i  ><p>Email:smile@drdento.com</p> </i>
+                   <br>
+                   <span><i class="fa-thin fa-location-pin">
+                    
+                   </i></span>
+                     <div class="address">
+                      <p>4A, 4th floor, Trade World C,<br>
+                        next to BSE, Kamala Mills Compound,<br>
+                        Senapati Bapat Marg, Lower Parel, Mumbai</p>
+                     </div>
+                    
+                    <!--call-->
+                    <div class="callto"> 
+                      <span><i fa fa-phone></i></span>
+                      <div class="call">
+                 <p>Call us: +917045519999</p>
+                 </div>
+                 </div>
+                   <!--email-->
+                  <div class="emailto"> 
+                 <span>
+                  <i class="fa fa-envelope"></i>
+                 </span>  
+                 <div class="email"> 
+                 <p>Email: <a href="mailto:smile@drdento.com">smile@drdento.com</a></p>
+                </div>
+              </div>
                   <br>
                   <h2>FOLLOW US</h2>
                   <!-- From Uiverse.io by david-mohseni --> 
                   <ul class="wrapper">
                     <li class="icon facebook">
-                      <span class="tooltip">Facebook</span>
+                     <span class="tooltip">Facebook</span>
                       <svg
                         viewBox="0 0 320 512"
                         height="1.2em"
@@ -203,7 +316,7 @@
 </div>
             </div>
             <div class="footer-content">
-                <h3>Quick Links:</h3>
+        
                  <ul class="list">
                     <li><a href="">Home</a></li>
                     <li><a href="">Shop</a></li>
@@ -217,13 +330,22 @@
                     <li><a href="">Shipping And Delivery</a></li>
                  </ul>
             </div>
-            <div class="footer-content">
+            <div class="footer-content-right">
                 <h3>NEWSLETTER SIGN UP</h3>
-                <p>Receive our latest updates about products and promotions.</p>
+                <br>
+                <div class="paragraph">
+                  <p>Receive our latest updates about products and promotions.</p>
+                </div>
+                 <br>
                 <div class="input-group">
                 <input type="email" class="input" id="Email" name="Email" placeholder="uiverse@verse.io" autocomplete="off">
     <input class="button--submit" value="Subscribe" type="submit"></div>
             </div>
+        </div>
+      </div>
+        <!--bottom bar-->
+        <div class="bottom-bar">
+          <p>&copy; 2024 White Tusk Healthcare Private Limited. All Right Reserverd.</p>
         </div>
     </footer>
     
