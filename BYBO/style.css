@@ -121,3 +121,33 @@
         background-color: #0056b3;
       } 
     
+      .marquee {
+        height: 55px;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+        background-color: black;
+        color: white;
+    }
+
+    .marquee span {
+        display: inline-block;
+        padding-right: 7%;
+        animation: slide 30s linear infinite;
+    }
+
+    @keyframes slide {
+        from {
+            transform: translateX(50%);
+        }
+        to {
+            transform: translateX(-80%);
+        }
+    }
+
+    .icon {
+        margin: 5 5px;
+      
+    }
+    
