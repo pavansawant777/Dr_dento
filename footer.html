@@ -15,7 +15,7 @@
         color: white;
       }
       footer{
-        background-color: rgb(148, 146, 146);
+        background-color:black;
         padding-top: 50px;
       }
       .container{
@@ -27,27 +27,40 @@
        .footer-content{
         width: 33.3%;
        }
-       h3{
+       .footer-content-3{
+        width: 33.3%;
+       }
+       .h3{
         font-size: 28px;
         margin-bottom: 15px;
         text-align: center;
        }
-         
+       .h2{
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+       }
+        
+  
        .footer-content p{
-        width: 190px;
-        margin: auto;
-        padding: 7px;
+        width: 300px;
+        margin:auto;
+        font-size: 14px;
+        font-weight: lighter;
+        font-stretch: semi-expanded;
+        padding: 8px;
+        font-family:Arial, Helvetica, sans-serif;
 
        }
        .footer-content ul{
-        text-align: center;
+        text-align:center;
        }
        .list{
         padding: 0; 
        }
        .list li{
         width: auto;
-        text-align: center;
+        text-align: left;
         list-style-type: none;
         padding: 7px;
         position: relative;
@@ -56,15 +69,18 @@
         content: '';
         position: absolute;
         transform: translate(-50%,-50%);
-        left: 50%;
+        left:10%;
         top: 100%;
         width: 0;
-        height: 2px;
+        height: 3px;
         background:#fff;
         transition-duration: .5s;
        }
        .list li:hover::before{
             width: 70px;
+       }
+       .footer-content-right{
+        text-align: left;
        }
        .bottom-bar{
         background: rgb(115, 244, 235);
@@ -87,9 +103,9 @@
   display: inline-flex;
   text-align: center;
   list-style: none;
-  height: 120px;
+  height: 100%;
   width: 100%;
-  padding-top: 40px;
+  padding-top: 20px;
   font-family: "Poppins", sans-serif;
   justify-content: center;
 }
@@ -114,7 +130,7 @@
 }
 
 .wrapper .tooltip {
-  position: absolute;
+  position:absolute;
   top: 0;
   font-size: 14px;
   background: #fff;
@@ -217,15 +233,23 @@
         <div class="container">
           <div class="footer-content-3"> 
             <div class="footer-content">
-                 
+              <div class="imgset"> 
+                 <img src="img/Dr.dento_logo_200x-footer.avif" style="display: flex;">
+                </div>
                 <p>We care for your oral hygiene as much as we care for you to
-                   smile confidently all day long. Our products are backed by <br>
+                   smile confidently all day long. Our products are backed by 
                    extensive innovative research and are ergonomically designed 
                    to give you a smooth yet effective oral care experiemce.</p>
                    <br>
-                   <p>4A, 4th floor, Trade World C,<br>
-                    next to BSE, Kamala Mills Compound,<br>
-                    Senapati Bapat Marg, Lower Parel, Mumbai</p>
+                   <span><i class="fa-thin fa-location-pin">
+                    
+                   </i></span>
+                     <div class="address">
+                      <p>4A, 4th floor, Trade World C,<br>
+                        next to BSE, Kamala Mills Compound,<br>
+                        Senapati Bapat Marg, Lower Parel, Mumbai</p>
+                     </div>
+                    
                     <!--call-->
                     <div class="callto"> 
                       <span><i fa fa-phone></i></span>
@@ -247,7 +271,7 @@
                   <!-- From Uiverse.io by david-mohseni --> 
                   <ul class="wrapper">
                     <li class="icon facebook">
-                      <span class="tooltip">Facebook</span>
+                     <span class="tooltip">Facebook</span>
                       <svg
                         viewBox="0 0 320 512"
                         height="1.2em"
@@ -292,7 +316,7 @@
 </div>
             </div>
             <div class="footer-content">
-                <h3>Quick Links:</h3>
+        
                  <ul class="list">
                     <li><a href="">Home</a></li>
                     <li><a href="">Shop</a></li>
@@ -306,9 +330,13 @@
                     <li><a href="">Shipping And Delivery</a></li>
                  </ul>
             </div>
-            <div class="footer-content">
+            <div class="footer-content-right">
                 <h3>NEWSLETTER SIGN UP</h3>
-                <p>Receive our latest updates about products and promotions.</p>
+                <br>
+                <div class="paragraph">
+                  <p>Receive our latest updates about products and promotions.</p>
+                </div>
+                 <br>
                 <div class="input-group">
                 <input type="email" class="input" id="Email" name="Email" placeholder="uiverse@verse.io" autocomplete="off">
     <input class="button--submit" value="Subscribe" type="submit"></div>
