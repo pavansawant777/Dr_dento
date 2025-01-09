@@ -157,6 +157,11 @@
       align-items: center;
       margin-left: 450px;
   }
+  .step-container2{
+    display: flex;
+      align-items: center;
+      margin-left: 350px;
+  }
   
   .step {
       text-align: center;
