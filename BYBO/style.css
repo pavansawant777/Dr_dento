@@ -121,3 +121,128 @@
         background-color: #0056b3;
       } 
     
+      .marquee {
+        height: 55px;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+        background-color: black;
+        color: white;
+    }
+
+    .marquee span {
+        display: inline-block;
+        padding-right: 7%;
+        animation: slide 30s linear infinite;
+    }
+
+    @keyframes slide {
+        from {
+            transform: translateX(50%);
+        }
+        to {
+            transform: translateX(-80%);
+        }
+    }
+
+    .icon {
+        margin: 5 5px;
+      
+    }
+    
+  
+  .step-container {
+      display: flex;
+      align-items: center;
+      margin-left: 450px;
+  }
+  
+  .step {
+      text-align: center;
+      margin: 0 10px;
+  }
+  
+  .circle {
+      width: 40px;
+      height: 40px;
+      border: 2px solid #0d6efd;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      color: #0d6efd;
+      margin: 0 auto 10px auto;
+  }
+  
+  .line {
+      height: 2px;
+      width: 100px;
+      background-color:#ccc;
+  }
+ 
+
+
+
+.card {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #555;
+    background-color: #e8f5e9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.product-selector {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    
+}
+
+.product-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    border-style: dashed;
+    border-color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-btn:hover {
+    background-color: #d1e7dd;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.total {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.back-btn,
+.checkout-btn {
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover,
+.checkout-btn:hover {
+    background-color:#0288d1;
+}
+
