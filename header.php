@@ -30,33 +30,36 @@
       justify-content: center;
     }
     #shopNowBtn {
-      background-color: #07dae1;
+      background-color: #2ab9a4;
       border-radius: 10px;
       margin-right: 70%;
     }
     .slider-container {
-      background-color: #07dae1;
+      background-color: #2ab9a4;
       padding: 10px 0;
       overflow: hidden;
     }
     .slider-item {
       font-size: 1.2rem;
       font-weight: bold;
-      color: #212529;
+      color:rgb(240, 242, 245);
       text-align: center;
     }
     .secondary-navbar {
       background-color: #f8f9fa;
       padding: 10px 0;
+      
     }
     .secondary-navbar .nav-link {
       color: #212529 !important;
       font-size: 1.2rem; 
-      font-weight: bold;
-      margin-left: 20px;
+      margin-left: 30px;
+      font-weight:bold;
     }
     .secondary-navbar .nav-link:hover {
       text-decoration: underline;
+      text-decoration: bold;
+      
     }
     .contact-us-link {
       margin-right: 80px; /* Ensures proper margin for Contact Us */
@@ -80,7 +83,18 @@
     }
     .navbar .dropdown-toggle::after {
   display: none !important;
+  
 }
+
+
+
+    .navbar .dropdown-divider {
+  width: 80%; /* Adjust the width (percentage or pixel value) */
+  margin: 5px auto; /* Center the divider and add spacing */
+  border-width: 2px; /* Adjust the thickness */
+  border-color: #07dae1; /* Change the color of the divider */
+    }
+
   </style>
 
 </head>
@@ -157,45 +171,62 @@
     <li>
       <a class="dropdown-item d-flex align-items-center" href="#">
         <img src="https://cdn.shopify.com/s/files/1/0666/5080/0412/files/Toothbrush.svg?v=1724476997" alt="Shop 2 Logo" width="30" height="30" class="me-2">
-        <span>Shop 2</span>
+        <span>Electric Toothbrush</span>
       </a>
     </li><li><hr class="dropdown-divider"></li>
     <li>
       <a class="dropdown-item d-flex align-items-center" href="#">
         <img src="https://cdn.shopify.com/s/files/1/0666/5080/0412/files/Toothpaste.svg?v=1724476998" alt="Shop 3 Logo" width="30" height="30" class="me-2">
-        <span>Shop 3</span>
+        <span>Toothpast</span>
       </a>
     </li><li><hr class="dropdown-divider"></li>
     <li>
       <a class="dropdown-item d-flex align-items-center" href="#">
         <img src="https://cdn.shopify.com/s/files/1/0666/5080/0412/files/Mouthwash.svg?v=1724476997" alt="Shop 4 Logo" width="30" height="30" class="me-2">
-        <span>Shop 3</span>
+        <span>MouthWash</span>
       </a>
     </li><li><hr class="dropdown-divider"></li>
     <li>
       <a class="dropdown-item d-flex align-items-center" href="#">
         <img src="https://cdn.shopify.com/s/files/1/0666/5080/0412/files/Oil_Pulling.svg?v=1728890421" alt="Shop 5 Logo" width="30" height="30" class="me-2">
-        <span>Shop 3</span>
+        <span>Oil Pulling</span>
       </a>
     </li><li><hr class="dropdown-divider"></li>
     <li>
       <a class="dropdown-item d-flex align-items-center" href="#">
         <img src="https://cdn.shopify.com/s/files/1/0666/5080/0412/files/Combo.svg?v=1728890421" alt="Shop 6 Logo" width="30" height="30" class="me-2">
-        <span>Shop 3</span>
+        <span>Combos</span>
       </a>
     </li><li><hr class="dropdown-divider"></li>
     <li>
       <a class="dropdown-item d-flex align-items-center" href="#">
         <img src="https://cdn.shopify.com/s/files/1/0666/5080/0412/files/Brush_Head.svg?v=1726818322" alt="Shop 7 Logo" width="30" height="30" class="me-2">
-        <span>Shop 3</span>
+        <span>BrushHeads</span>
       </a>
     </li>
   </ul>
 </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#">BYOB</a>
-          </li>
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarByob" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    BYOB
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="navbarByob">
+  <li>
+      <a class="nav-link dropdown-toggle" href="#">
+        <img src="https://cdn.shopify.com/s/files/1/0666/5080/0412/files/All_Products.svg?v=1724476997" alt="Shop 1 Logo" width="30" height="30" class="me-2">
+        <span>All</span>
+      </a>
+    </li>
+    <li><a class="dropdown-item" href="#">BYOB@599</a></li>
+    <li><a class="dropdown-item" href="#">BYOB@799</a></li>
+    <li><a class="dropdown-item" href="#">BYOB@999</a></li>
+    <li><a class="dropdown-item" href="#">BYOB@1299</a></li>
+    <li><a class="dropdown-item" href="#">BYOB@1999</a></li>
+    
+  </ul>
+</li>
+
           <li class="nav-item">
             <a class="nav-link" href="#">Our Story</a>
           </li>
