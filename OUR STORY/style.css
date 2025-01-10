@@ -1,0 +1,56 @@
+.marquee {
+    height: 55px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: rgb(10, 245, 233);
+    color: white;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-right: 5%;
+    animation: slide 30s linear infinite;
+
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(50%);
+    }
+    to {
+        transform: translateX(-99%);
+    }
+}
+
+.icon {
+    margin: 5 5px;
+    color: white;
+  
+}
+.main {
+    background: #ecfeff;
+    background-image: url(https://cdn.shopify.com/s/files/1/0666/5080/0412/files/New_Project_8.png?v=1673010142);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+.containt{
+    text-shadow: 3px 3px #b6b6ac;
+}
+.submain , .main1{
+    background: #ecfeff;
+    background-image: url(https://cdn.shopify.com/s/files/1/0666/5080/0412/files/New_Project_8.png?v=1673010142);
+    background-size: cover;
+    height: 420px;
+    width: 100%;
+}
+.Big{
+    background: #ecfeff;
+    background-image: url(https://cdn.shopify.com/s/files/1/0666/5080/0412/files/New_Project_8.png?v=1673010142);
+    background-size: cover;
+    height: 750px;
+    width: 100%;
+}
+
