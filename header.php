@@ -30,19 +30,19 @@
       justify-content: center;
     }
     #shopNowBtn {
-      background-color: #07dae1;
+      background-color: #2ab9a4;
       border-radius: 10px;
       margin-right: 70%;
     }
     .slider-container {
-      background-color: #07dae1;
+      background-color: #2ab9a4;
       padding: 10px 0;
       overflow: hidden;
     }
     .slider-item {
       font-size: 1.2rem;
       font-weight: bold;
-      color: #212529;
+      color:rgb(240, 242, 245);
       text-align: center;
     }
     .secondary-navbar {
