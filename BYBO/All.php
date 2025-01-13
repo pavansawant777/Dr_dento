@@ -29,9 +29,13 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 60px; text-align: center;"><b>BUILD YOUR OWN SMILE BOX</b></h1>
-     <a href="#"><img src="../BYBO/BYBO photos/Main2.jpg" style="height: 500px; width: 1180px;padding-left: 150px;"></a>
-      <div class="m1">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../BYBO/BYBO photos/Main2.jpg" class="d-block w-100" alt="...">
+          </div></div></div>
+    
+     <div class="m1">
         <h3 style="text-align: center;"><u>NEW YEAR SALE @799</u></h3>
         <a href="#" class="custom-button" >BUILD YOUR OWN BOX</a>
       </div><br>
@@ -113,5 +117,5 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+ </body>
 </html>

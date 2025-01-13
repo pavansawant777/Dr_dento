@@ -71,18 +71,17 @@
     </div>
       
     
-    <div class="card" style="width: 100%;">
-        <div class="icon" style="border-radius: 7px; margin-left: 49%;background-color: rgb(1, 235, 252);color: white;margin-right: 49%;"><i class="fa-solid fa-cart-shopping"></i></div>
-      <div class="card-body" style="text-align: center;">
-       <h5><b> Avail The Offer</b></h5>
+    <div class="container">
+      <div class="icon" style="border-radius: 7px; margin-left: 49%;background-color: rgb(1, 235, 252);color: white;margin-right: 49%;"><i class="fa-solid fa-cart-shopping"></i></div>
+      <div class="bundle-message">
+        Avil.Offer
+      </div>
+      <div class="footer-bar">
+        <button class="btn btn-outline-secondary" onclick="goBack()">Back</button>
+        <span>Total ₹<span id="total-amount">0.00</span></span>
+        <button class="btn btn-primary" onclick="proceedToCheckout()">Proceed To Checkout</button>
       </div>
     </div>
-
-      <div class="footer" style="margin-left:35% ;">
-           <span> <button class="back-btn" style="margin-right: 60px;" >Back</button> Total ₹<span id="total-amount">0.00</span>
-         
-          <button class="checkout-btn" style="margin-left: 60px;">Proceed To Checkout</button></span>
-      </div>
       <br>
       <br>
       <h2 style="text-align: center;"><b>Best-Selling Product</b></h2>

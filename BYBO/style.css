@@ -1,253 +1,473 @@
-        .custom-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #1a1a1a; /* Dark background */
-            color:white;
-            font-size: 16px;
-            font-weight: bold;
-            text-transform: uppercase;
-            text-align: center;
-            margin-left: 550px;
-            border: none;
-            border-radius: 4px;
-            box-shadow:   0px 9px 9px blue;; /* Shadow effect */
-            cursor: pointer;
-            position: relative;
-        }
+/* Custom Buttons */
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 550px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 9px 9px blue;
+  cursor: pointer;
+  position: relative;
+}
 
-        .custom-button::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            right: -5px;
-            height: 4px;
-            background-color: #00bcd4; /* Cyan border at the bottom */
-            z-index: -1;
-            border-radius: 2px;
-        }
+.custom-button::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: -5px;
+  height: 4px;
+  background-color: #00bcd4;
+  z-index: -1;
+  border-radius: 2px;
+}
 
-        .custom-button:hover  {
-            background-color: #333; /* Slightly lighter on hover */
-        }
-      .custom-button1{
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #1a1a1a; /* Dark background */
-        color:white;
-        font-size: 16px;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: center;
-        margin-left: 230px;
-        border: none;
-        border-radius: 4px;
-        box-shadow: 0px 9px 9px blue; /* Shadow effect */
-        cursor: pointer;
-        position: relative;
-      }
-     
-  
-       .products-container {
-        display: flex;
-        overflow-x: auto; /* Enable horizontal scrolling */
-        gap: 20px; /* Space between products */
-        padding: 10px;
-        scroll-behavior: smooth; /* Smooth scrolling effect */
-      }
-  
-       .products-container::-webkit-scrollbar {
-        height: 8px;
-      }
-  
-       .products-container::-webkit-scrollbar-thumb {
-        background: #007bff;
-        border-radius: 10px;
-      }
-  
-       .products-container::-webkit-scrollbar-track {
-        background: #f1f1f1;
-      }
-  
-       .product {
-        background-color: #fff;
-        padding: 15px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        width: 220px;
-        text-align: center;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        flex-shrink: 0; /* Prevent shrinking of products */
-      }
-  
-     .product img {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-      }
-  
-       .product h3 {
-        font-size: 1.2rem;
-        margin-bottom: 8px;
-      }
-  
-      .product .price {
-        font-size: 1rem;
-        color: #333;
-      }
-  
-     .product .discount {
-        color: red;
-        font-weight: bold;
-      }
-  
-       .product .ratings {
-        font-size: 0.9rem;
-        color: #777;
-        margin: 10px 0;
-      }
-  
-       .product button {
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        padding: 10px 15px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 1rem;
-      }
-  
-      .product button:hover {
-        background-color: #0056b3;
-      } 
-    
-      .marquee {
-        height: 55px;
-        width: 100%;
-        overflow: hidden;
-        white-space: nowrap;
-        box-sizing: border-box;
-        background-color: black;
-        color: white;
-    }
+.custom-button:hover {
+  background-color: #333;
+}
 
-    .marquee span {
-        display: inline-block;
-        padding-right: 7%;
-        animation: slide 30s linear infinite;
-    }
+.custom-button1 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 230px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 9px 9px blue;
+  cursor: pointer;
+  position: relative;
+}
 
-    @keyframes slide {
-        from {
-            transform: translateX(50%);
-        }
-        to {
-            transform: translateX(-80%);
-        }
-    }
+/* Product Section */
+.products-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
 
-    .icon {
-        margin: 5 5px;
-      
-    }
-    
-  
+.products-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.products-container::-webkit-scrollbar-thumb {
+  background: #007bff;
+  border-radius: 10px;
+}
+
+.products-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.product {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.product .price {
+  font-size: 1rem;
+  color: #333;
+}
+
+.product .discount {
+  color: red;
+  font-weight: bold;
+}
+
+.product .ratings {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 10px 0;
+}
+
+.product button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.product button:hover {
+  background-color: #0056b3;
+}
+
+/* Marquee */
+.marquee {
+  height: 55px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-right: 7%;
+  animation: slide 30s linear infinite;
+}
+
+@keyframes slide {
+  from {
+      transform: translateX(50%);
+  }
+  to {
+      transform: translateX(-80%);
+  }
+}
+/* Base Styles */
+.step-container {
+  display: flex;
+flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Individual Step Styles */
+.step {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Circle with Icon */
+.circle {
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.circle i {
+  font-size: 24px;
+}
+
+/* Step Description */
+.step p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Line between steps */
+.line {
+  margin-top: 80px;
+  height: 2px;
+  background-color: #ccc;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
   .step-container {
+      flex-direction: row;
+      gap: 30px;
+  }
+
+  .step {
+      width: calc(50% - 15px);
+      padding: 30px;
       display: flex;
       align-items: center;
+  }
+
+  .circle {
+      width: 60px;
+      height: 60px;
+  }
+
+  .circle i {
+      font-size: 28px;
+  }
+}
+
+@media (min-width: 900px) {
+  .step-container {
+      gap: 40px;
+  }
+
+  .step {
+      width: calc(33.33% - 20px);
+      padding: 40px;
+  }
+
+  .circle {
+      width: 70px;
+      height: 70px;
+  }
+
+  .circle i {
+      font-size:32px;
+}
+}
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .custom-button {
       margin-left: 450px;
   }
-  .step-container2{
-    display: flex;
-      align-items: center;
-      margin-left: 350px;
+  .custom-button1 {
+      margin-left: 200px;
   }
-  
-  .step {
-      text-align: center;
-      margin: 0 10px;
+}
+
+@media (max-width: 992px) {
+  .custom-button {
+      margin-left: 300px;
   }
-  
-  .circle {
-      width: 40px;
-      height: 40px;
-      border: 2px solid #0d6efd;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 18px;
-      color: #0d6efd;
-      margin: 0 auto 10px auto;
+  .custom-button1 {
+      margin-left: 150px;
   }
-  
+
+  .step-container {
+      flex-wrap: wrap;
+  }
+
   .line {
-      height: 2px;
-      width: 100px;
-      background-color:#ccc;
+      width: 50px;
   }
- 
-
-
-
-.card {
-    margin: 20px 0;
-    font-size: 16px;
-    color: #555;
-    background-color: #e8f5e9;
-    padding: 10px;
-    border-radius: 5px;
 }
 
+@media (max-width: 768px) {
+  .custom-button,
+  .custom-button1 {
+      margin-left: 0;
+      width: 100%;
+  }
+
+  .products-container {
+      gap: 10px;
+  }
+
+  .product {
+      width: 180px;
+  }
+
+  .step-container {
+      flex-direction: column;
+  }
+
+  .line {
+      display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .product {
+      width: 150px;
+  }
+
+  .circle {
+      width: 30px;
+      height: 30px;
+      font-size: 14px;
+  }
+
+  .custom-button,
+  .custom-button1 {
+      font-size:14px;
+  }
+}
+.bundle-message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #5a5a5a;
+  text-align: center;
+  margin: 1rem 0;
+}
+.footer-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #ddd;
+}
+.footer-bar .btn {
+  width: 48%;
+}
+@media (min-width: 768px) {
+  .footer-bar .btn {
+    width: auto;
+  }
+}
 .product-selector {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 20px 0;
-    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  
 }
 
-.product-btn {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    border-style: dashed;
-    border-color: black;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+/* Button styling */
+.product-button {
+  flex: 1 1 calc(50% - 1rem); /* 2 buttons per row on medium screens */
+  max-width: 200px; /* Max width for each button */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  border-style: dashed;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-.product-btn:hover {
-    background-color: #d1e7dd;
+.product-button:hover {
+  background-color: #0056b3;
 }
 
-.footer {
-    margin-top: 20px;
+/* Responsive styling */
+@media (min-width: 768px) {
+  .product-button {
+    flex: 1 1 calc(25% - 1rem); /* 4 buttons per row on larger screens */
+  }
 }
 
-.total {
-    font-size: 18px;
-    margin: 10px 0;
-    font-weight: bold;
+@media (max-width: 576px) {
+  .product-button {
+    flex: 1 1 100%; /* 1 button per row on smaller screens */
+  }
+}
+/* Base Styles */
+.step-container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.back-btn,
-.checkout-btn {
-    background-color: #00bcd4;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 10px;
-    transition: background-color 0.3s ease;
+/* Individual Step2 Styles */
+.step2 {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.back-btn:hover,
-.checkout-btn:hover {
-    background-color:#0288d1;
+/* Circle2 with Icon */
+.circle2 {
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
 }
 
+.circle2 i {
+  font-size: 24px;
+}
+
+/* Step2 Description */
+.step2 p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.step2 p b {
+  font-weight: bold;
+}
+
+/* Line2 between steps */
+.line2 {
+  height: 2px;
+  background-color: #f3f2ed;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+  .step-container2 {
+      flex-direction: row;
+      gap: 30px;
+  }
+
+  .step2 {
+      width: calc(50% - 15px);
+      padding: 30px;
+      display: flex;
+      align-items: center;
+  }
+
+  .circle2 {
+      width: 60px;
+      height: 60px;
+  }
+
+  .circle2 i {
+      font-size: 28px;
+  }
+}
+
+@media (min-width: 900px) {
+  .step-container2 {
+      gap: 40px;
+  }
+
+  .step2 {
+      width: calc(33.33% - 20px);
+      padding: 40px;
+  }
+
+  .circle2 {
+      width: 70px;
+      height: 70px;
+  }
+
+  .circle2 i {
+      font-size:32px;
+}
+}

@@ -78,26 +78,22 @@
         <a href="#" class="btn btn-primary" style="margin-left: 65px;">Add To Box</a>
       </div>
     </div>
-    
-    <div class="card" style="width: 100%;">
-      <div class="card-body" style="text-align: center;">
-       <h5><b> Add 4 product(s) to get the bundle at ₹599.00</b></h5>
+    <div class="container">
+      <div class="bundle-message">
+        Add <span id="product-count">4</span> product(s) to get the bundle at ₹<span id="bundle-price">599.00</span>
+      </div>
+      <div class="product-selector">
+        <button class="product-btn" onclick="updateTotal(1)">1</button>
+        <button class="product-btn" onclick="updateTotal(2)">2</button>
+        <button class="product-btn" onclick="updateTotal(3)">3</button>
+        <button class="product-btn" onclick="updateTotal(4)">4</button>
+    </div>
+      <div class="footer-bar">
+        <button class="btn btn-outline-secondary" onclick="goBack()">Back</button>
+        <span>Total ₹<span id="total-amount">0.00</span></span>
+        <button class="btn btn-primary" onclick="proceedToCheckout()">Proceed To Checkout</button>
       </div>
     </div>
-      
-
-      <div class="product-selector">
-          <button class="product-btn" onclick="updateTotal(1)">1</button>
-          <button class="product-btn" onclick="updateTotal(2)">2</button>
-          <button class="product-btn" onclick="updateTotal(3)">3</button>
-          <button class="product-btn" onclick="updateTotal(4)">4</button>
-      </div>
-
-      <div class="footer" style="margin-left:35% ;">
-           <span> <button class="back-btn" style="margin-right: 60px;" >Back</button> Total ₹<span id="total-amount">0.00</span>
-         
-          <button class="checkout-btn" style="margin-left: 60px;">Proceed To Checkout</button></span>
-      </div>
       <br>
       <br>
       <h2 style="text-align: center;"><b>Best-Selling Product</b></h2>
