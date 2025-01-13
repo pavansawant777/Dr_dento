@@ -4,100 +4,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-  <!-- Sidebar Container -->
-  <div class="sidebar vh-100 bg-light p-3" id="sidebar">
-    <div class="card shadow-2-strong" style="border-radius: 1rem;">
-      <div class="card-body p-4 ">
-        <h3 class="mb-4">Sign in</h3>
-        <div class="form-outline mb-3">
-        <label class="form-label" for="typeEmailX-2">Email Address</label>
-          <input type="email" id="typeEmailX-2" class="form-control form-control-sm" />
-          
-        </div>
-        <div class="form-outline mb-3">
-        <label class="form-label" for="typePasswordX-2">Password</label>
-          <input type="password" id="typePasswordX-2" class="form-control form-control-sm" />
-         
-        </div>
-        <button class="btn btn-primary btn-sm btn-block w-100 mb-3" type="submit">Login</button>
-        <div class="text"><a class="auth-link link link-underline" href="/account/login#recover">
-            <span class="text">Forgot your password?</span></a></div>
-       
-        <hr class="my-3">
-       
-       
-       
-        <button class="btn btn-sm btn-block w-100 create-account-btn" type="submit">
-  Create An Account
-</button>
-      </div>
-    </div>
-  </div>
+  <style>/* Sidebar Styles */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Transparent background */
+  overflow-x: hidden;
+  transition: 0.3s ease;
+  padding-top: 60px;
+  display: none; /* Initially hidden */
+  z-index: 9999; /* Ensure it appears over content */
+}
 
-  <!-- Main Content -->
-  <div id="main-content">
-    <!-- Add main page content here -->
-    <button class="btn btn-secondary mt-3 ms-3" id="toggle-sidebar">Login</button>
-  </div>
+/* Sidebar content styling */
+.sidebar-content {
+  width: 250px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+}
 
-  <!-- CSS -->
-  <style>
-    .sidebar {
-      position: fixed;
-      top: 0;
-      right: -300px;
-      width: 300px;
-      max-width: 100%;
-      transition: right 0.3s ease-in-out;
-    }
+/* Close button styling */
+.btn-close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+}
 
-    .sidebar.active {
-      right: 0;
-    }
+/* Make sure the login form is centered */
+.sidebar-content form {
+  display: flex;
+  flex-direction: column;
+}
 
-    #main-content {
-      transition: margin-right 0.3s ease-in-out;
-    }
-
-    #main-content.sidebar-active {
-      margin-right: 300px;
-    }
-    <style>
-  /* Style for 'Create An Account' button */
-  .create-account-btn {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .create-account-btn:hover {
-    background-color: black;
-    color: white;
-    border: 1px solid white;
-    box-shadow: 0 4px 6px #2ab9a4; /* Red shadow for hover effect */
-  }
+/* Sidebar toggle (login icon) adjustment */
+#openLoginSidebar {
+  cursor: pointer;
+}
 </style>
+</head>
 
-  </style>
+  
+<body>
+  <!-- Sidebar for Login Form -->
+<div id="loginSidebar" class="sidebar">
+  <div class="sidebar-content">
+    <button id="closeSidebar" class="btn btn-close">X</button>
+    <h2>Login Form</h2>
+    <form action="login.php" method="post">
+      <div class="mb-3">
+        <label for="username" class="form-label">Username:</label>
+        <input type="text" class="form-control" id="username" name="username" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password:</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+  </div>
+</div>
 
-  <!-- JavaScript -->
-  <script>
-    const sidebar = document.getElementById('sidebar');
-    const toggleBtn = document.getElementById('toggle-sidebar');
-    const mainContent = document.getElementById('main-content');
+<script>
+  // Open sidebar
+document.getElementById('openLoginSidebar').addEventListener('click', function() {
+  document.getElementById('loginSidebar').style.width = '250px';
+  document.getElementById('loginSidebar').style.display = 'block'; // Show the sidebar
+  document.body.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // Dim background when sidebar is open
+});
 
-    toggleBtn.addEventListener('click', () => {
-      sidebar.classList.toggle('active');
-      mainContent.classList.toggle('sidebar-active');
-    });
-  </script>
+// Close sidebar
+document.getElementById('closeSidebar').addEventListener('click', function() {
+  document.getElementById('loginSidebar').style.width = '0';
+  document.getElementById('loginSidebar').style.display = 'none';
+  document.body.style.backgroundColor = ''; // Reset background color
+});
+
+// Close sidebar if clicked outside
+window.addEventListener('click', function(event) {
+  if (event.target == document.getElementById('loginSidebar')) {
+    document.getElementById('loginSidebar').style.width = '0';
+    document.getElementById('loginSidebar').style.display = 'none';
+    document.body.style.backgroundColor = '';
+  }
+});
+</script>
 </body>
 </html>

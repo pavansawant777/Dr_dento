@@ -95,6 +95,70 @@
   border-color: #07dae1; /* Change the color of the divider */
     }
 
+      /* Additional Styles for Sidebar */
+      .sidebar {
+      position: fixed;
+      top: 0;
+      right: -100%; /* Hidden initially */
+      width: 300px;
+      height: 100%;
+      background-color: #ffffff;
+      color: #fff;
+      padding: 20px;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+      transition: right 0.4s ease;
+      z-index: 1050; /* Higher than the content */
+    }
+
+    .sidebar.active {
+      right: 0; /* Slide-in effect */
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1040; /* Below the sidebar */
+    }
+
+    .overlay.active {
+      display: block;
+    }
+
+    .sidebar h2 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 20px;
+      color: black;
+    }
+
+    .sidebar form .form-group {
+      margin-bottom: 15px;
+    }
+
+    .sidebar .btn-primary {
+      width: 100%;
+    }
+
+    /* Align the icons properly */
+    .icon-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .icon-container a {
+      font-size: 1.5rem;
+      color: #212529;
+    }
+
+    .icon-container a:hover {
+      color: #07dae1;
+    }
+
   </style>
 
 </head>
@@ -242,10 +306,33 @@
      <!-- Add icons inside the navbar -->
      <div class="icon-container">
             <a href="search.html"><i class="fa fa-magnifying-glass"></i></a> <!-- Search Icon -->
-            <a href="login.html"><i class="fa fa-user"></i></a> <!-- Login Icon -->
+            <a href="#" id="loginIcon"><i class="fa fa-user"></i></a>
             <a href="likes.html"><i class="fa fa-heart"></i></a> <!-- Like Icon -->
             <a href="cart.html"><i class="fa fa-cart-shopping"></i></a> <!-- Cart Icon -->
           </div>
+
+           <!-- Sidebar for Login Form -->
+  <div id="sidebar" class="sidebar">
+    <h2>Login</h2>
+    <form>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter password">
+      </div>
+      <div class="form-group d-flex justify-content-between">
+        <a href="#" class="text-light">Forgot Your Password?</a>
+      </div>
+      <button type="submit" class="btn btn-primary mb-3">Login</button>
+      <button type="button" class="btn btn-secondary">Create an Account</button>
+    </form>
+  </div>
+
+  <!-- Overlay -->
+  <div id="overlay" class="overlay"></div>
   </nav>
 
   <script>
@@ -277,6 +364,26 @@
     });
   </script>
 
+  <!-- Scripts -->
+  <script>
+    const loginIcon = document.getElementById('loginIcon');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+
+    // Show the sidebar and overlay when the login icon is clicked
+    loginIcon.addEventListener('click', () => {
+      sidebar.classList.add('active');
+      overlay.classList.add('active');
+    });
+
+    // Hide the sidebar and overlay when clicking outside
+    overlay.addEventListener('click', () => {
+      sidebar.classList.remove('active');
+      overlay.classList.remove('active');
+    });
+  </script>
+
+  
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
