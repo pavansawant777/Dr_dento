@@ -22,18 +22,18 @@
         </span>
     </div><br>
     <div class="step-container2">
-      <div class="step">
-        <div class="circle"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+      <div class="step2">
+        <div class="circle2"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
         <p><b>Add A Electric Toothbrush</b></p></div>
     
-      <div class="line"></div>
-      <div class="step">
-        <div class="circle"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></div>
+      <div class="line2"></div>
+      <div class="step2">
+        <div class="circle2"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></div>
         <p><b>Add A Toothpaste</b></p></div>
 
-        <div class="line"></div>
-      <div class="step">
-        <div class="circle"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></div>
+        <div class="line2"></div>
+      <div class="step2">
+        <div class="circle2"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></div>
         <p><b>Add A Freebie</b></p></div>
       </div>
     </div>
@@ -56,17 +56,19 @@
       
     
     <div class="card" style="width: 100%;">
+      <div class="container">
         <div class="icon" style="border-radius: 7px; margin-left: 49%;background-color: rgb(1, 235, 252);color: white;margin-right: 49%;"><i class="fa-solid fa-cart-shopping"></i></div>
-      <div class="card-body" style="text-align: center;">
-       <h5><b> Add 5 product(s) to get the bundle at ₹1299.00</b></h5>
+       
+        <div class="bundle-message">
+          Add <span id="product-count">5</span> product(s) to get the bundle at ₹<span id="bundle-price">1299.00</span>
+        </div>
+        <div class="footer-bar">
+          <button class="btn btn-outline-secondary" onclick="goBack()">Back</button>
+          <span>Total ₹<span id="total-amount">0.00</span></span>
+          <button class="btn btn-primary" onclick="proceedToCheckout()">Proceed To Checkout</button>
+        </div>
       </div>
     </div>
-
-      <div class="footer" style="margin-left:35% ;">
-           <span> <button class="back-btn" style="margin-right: 60px;" >Back</button> Total ₹<span id="total-amount">0.00</span>
-         
-          <button class="checkout-btn" style="margin-left: 60px;">Proceed To Checkout</button></span>
-      </div>
       <br>
       <br>
       <h2 style="text-align: center;"><b>Best-Selling Product</b></h2>
