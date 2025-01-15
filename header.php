@@ -158,7 +158,56 @@
     .icon-container a:hover {
       color: #07dae1;
     }
+    
+   /* General Button Styles */
+   .login-btn {
+    width: 100%;
+    background-color: #2ab9a4;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    box-shadow: 0px 6px 12px rgba(2,1,1); /* Intensified  shadow on hover */
+    margin-top: 10px;
+  }
 
+  /* Hover Effect for Login Button */
+  .login-btn:hover {
+    background-color: #fff; /* Change background to white */
+    color: #2ab9a4;       /* Change text color */
+    border: 1px solid  black; /* Optional border for highlighting */
+    box-shadow: 0px 6px 12px rgba(42,185,164); /* Intensified shadow on hover */
+  }
+
+  /* General Button Styles */
+  .btn-secondary {
+    width: 100%;
+    background-color:white;
+    border-color: black; 
+    color: black;
+    border: 2px solid black; /* Border with color */
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    box-shadow: 0px 6px 12px rgba(42,185,164); /* Intensified blue shadow on hover */
+    margin-top: 10px;
+  }
+
+  /* Hover Effect for Login Button */
+  .btn-secondary:hover {
+    background-color: black; /* Change background to white */
+    color: #2ab9a4;       /* Change text color */
+    border: 1px solid  black; /* Optional border for highlighting */
+    border-color: #0056b3; 
+    box-shadow: 0px 6px 12px rgba(2,1,1); /* Intensified  shadow on hover */
+  }
   </style>
 
 </head>
@@ -312,24 +361,26 @@
           </div>
 
            <!-- Sidebar for Login Form -->
-  <div id="sidebar" class="sidebar">
-    <h2>Login</h2>
-    <form>
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter email">
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" class="form-control" id="password" placeholder="Enter password">
-      </div>
-      <div class="form-group d-flex justify-content-between">
-        <a href="#" class="text-light">Forgot Your Password?</a>
-      </div>
-      <button type="submit" class="btn btn-primary mb-3">Login</button>
-      <button type="button" class="btn btn-secondary">Create an Account</button>
-    </form>
-  </div>
+<div id="sidebar" class="sidebar" style="background-color: white; padding: 20px; color: #fff; width: 300px; border-radius: 10px;">
+  <h2 style="text-align: center; margin-bottom: 20px;">Login</h2>
+  <form>
+    <div class="form-group" style="margin-bottom: 15px;">
+      <label for="email" style="font-weight: bold; display: block; color: black;">Email Address</label>
+      <input type="email" class="form-control" id="email" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Enter email">
+    </div>
+    <div class="form-group" style="margin-bottom: 15px;">
+      <label for="password" style="font-weight: bold; display: block; color: black;">Password</label>
+      <input type="password" class="form-control" id="password" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Enter password">
+    </div>
+    <button type="submit" class="btn btn-primary login-btn">Login</button>
+    <div class="form-group d-flex justify-content-between" style="margin-bottom: 15px; font-size: 0.9em;">
+      <a href="#" style="color: black; text-decoration: underline; margin-top: 10px;">Forgot Your Password?</a>
+    </div>
+    
+    <button type="button" class="btn btn-secondary">Create an Account</button>
+  </form>
+</div>
+
 
   <!-- Overlay -->
   <div id="overlay" class="overlay"></div>
