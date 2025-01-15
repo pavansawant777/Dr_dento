@@ -275,38 +275,38 @@
   </a>
   <ul class="dropdown-menu" aria-labelledby="navbarShop">
     <li>
-      <a class="dropdown-item d-flex align-items-center" href="#">
+      <a class="dropdown-item d-flex align-items-center" href="ALL.php">
         <img src="https://cdn.shopify.com/s/files/1/0666/5080/0412/files/All_Products.svg?v=1724476997" alt="Shop 1 Logo" width="30" height="30" class="me-2">
         <span>All</span>
       </a>
     </li>
     <li><hr class="dropdown-divider"></li>
     <li>
-      <a class="dropdown-item d-flex align-items-center" href="#">
+      <a class="dropdown-item d-flex align-items-center" href="Electribrush.php">
         <img src="https://cdn.shopify.com/s/files/1/0666/5080/0412/files/Toothbrush.svg?v=1724476997" alt="Shop 2 Logo" width="30" height="30" class="me-2">
         <span>Electric Toothbrush</span>
       </a>
     </li><li><hr class="dropdown-divider"></li>
     <li>
-      <a class="dropdown-item d-flex align-items-center" href="#">
+      <a class="dropdown-item d-flex align-items-center" href="Toothpaste.php">
         <img src="https://cdn.shopify.com/s/files/1/0666/5080/0412/files/Toothpaste.svg?v=1724476998" alt="Shop 3 Logo" width="30" height="30" class="me-2">
-        <span>Toothpast</span>
+        <span>Toothpaste</span>
       </a>
     </li><li><hr class="dropdown-divider"></li>
     <li>
-      <a class="dropdown-item d-flex align-items-center" href="#">
+      <a class="dropdown-item d-flex align-items-center" href="Mouthwash.php">
         <img src="https://cdn.shopify.com/s/files/1/0666/5080/0412/files/Mouthwash.svg?v=1724476997" alt="Shop 4 Logo" width="30" height="30" class="me-2">
         <span>MouthWash</span>
       </a>
     </li><li><hr class="dropdown-divider"></li>
     <li>
-      <a class="dropdown-item d-flex align-items-center" href="#">
+      <a class="dropdown-item d-flex align-items-center" href="oil_pulling.php">
         <img src="https://cdn.shopify.com/s/files/1/0666/5080/0412/files/Oil_Pulling.svg?v=1728890421" alt="Shop 5 Logo" width="30" height="30" class="me-2">
         <span>Oil Pulling</span>
       </a>
     </li><li><hr class="dropdown-divider"></li>
     <li>
-      <a class="dropdown-item d-flex align-items-center" href="#">
+      <a class="dropdown-item d-flex align-items-center" href="Combos.php">
         <img src="https://cdn.shopify.com/s/files/1/0666/5080/0412/files/Combo.svg?v=1728890421" alt="Shop 6 Logo" width="30" height="30" class="me-2">
         <span>Combos</span>
       </a>
@@ -331,20 +331,20 @@
         <span>All</span>
       </a>
     </li>
-    <li><a class="dropdown-item" href="#">BYOB@599</a></li>
-    <li><a class="dropdown-item" href="#">BYOB@799</a></li>
-    <li><a class="dropdown-item" href="#">BYOB@999</a></li>
-    <li><a class="dropdown-item" href="#">BYOB@1299</a></li>
-    <li><a class="dropdown-item" href="#">BYOB@1999</a></li>
+    <li><a class="dropdown-item" href="BYOB599.php">BYOB@599</a></li>
+    <li><a class="dropdown-item" href="BYOB799.php">BYOB@799</a></li>
+    <li><a class="dropdown-item" href="BYBO999.php">BYOB@999</a></li>
+    <li><a class="dropdown-item" href="BYOB1299.php">BYOB@1299</a></li>
+    <li><a class="dropdown-item" href="BYBO1999.php">BYOB@1999</a></li>
     
   </ul>
 </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Our Story</a>
+            <a class="nav-link" href="OUR STORY.php">Our Story</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blogs</a>
+            <a class="nav-link" href="blogs.php">Blogs</a>
           </li>
           <li class="nav-item">
             <a class="nav-link contact-us-link" href="#">Contact Us</a>
