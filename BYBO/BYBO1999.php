@@ -46,16 +46,18 @@
         <p class="card-text">₹2400.00</p>
         <a href="#" class="btn btn-primary" style="margin-left: 65px;">Add To Box</a>
       </div></div>
+      <div class="card" style="width: 100%;">
       <div class="container">
-      <div class="icon" style="border-radius: 7px; margin-left: 49%;background-color: rgb(1, 235, 252);color: white;margin-right: 49%;"><i class="fa-solid fa-cart-shopping"></i></div>
-     
-      <div class="bundle-message">
-        Add <span id="product-count">5</span> product(s) to get the bundle at ₹<span id="bundle-price">1999.00</span>
-      </div>
-      <div class="footer-bar">
-        <button class="btn btn-outline-secondary" onclick="goBack()">Back</button>
-        <span>Total ₹<span id="total-amount">0.00</span></span>
-        <button class="btn btn-primary" onclick="proceedToCheckout()">Proceed To Checkout</button>
+        <div class="icon" style="border-radius: 7px; margin-left: 49%;background-color: rgb(1, 235, 252);color: white;margin-right: 49%;"><i class="fa-solid fa-cart-shopping"></i></div>
+       
+        <div class="bundle-message">
+          Add <span id="product-count">5</span> product(s) to get the bundle at ₹<span id="bundle-price">1999.00</span>
+        </div>
+        <div class="footer-bar">
+          <button class="btn btn-outline-secondary" onclick="goBack()">Back</button>
+          <span>Total ₹<span id="total-amount">0.00</span></span>
+          <button class="btn btn-primary" onclick="proceedToCheckout()">Proceed To Checkout</button>
+        </div>
       </div>
     </div>
       <br>
