@@ -377,7 +377,8 @@
       <a href="#" style="color: black; text-decoration: underline; margin-top: 10px;">Forgot Your Password?</a>
     </div>
     
-    <button type="button" class="btn btn-secondary">Create an Account</button>
+    <button type="button" class="btn btn-secondary" onclick="window.location.href='register.php';">Create an Account</button>
+
   </form>
 </div>
 
