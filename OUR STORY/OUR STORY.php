@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <a href="#"><img src="../OUR STORY/photos/Blogmain1.jpg" class="img-fluid" alt="..."></a>
+    <a href="#"><img src="OUR STORY/photos/Blogmain1.jpg" class="img-fluid" alt="..."></a>
     
     
     <div class="marquee">
@@ -25,9 +25,9 @@
         </h3>
       </span>
     </div>
-    <img src="../OUR STORY/photos/blog2.jpg" class="img-fluid" alt="...">
-    <img src="../OUR STORY/photos/blog3.jpg" class="img-fluid" alt="...">
-    <img src="../OUR STORY/photos/blog4.jpg" class="img-fluid" alt="...">
+    <img src="OUR STORY/photos/blog2.jpg" class="img-fluid" alt="...">
+    <img src="OUR STORY/photos/blog3.jpg" class="img-fluid" alt="...">
+    <img src="OUR STORY/photos/blog4.jpg" class="img-fluid" alt="...">
  
     <div class="text">
       <h1 style="text-align: center; color: black;"><b>Why Us</b></h1>
@@ -61,7 +61,7 @@
           <p style="color: black; margin-top: 50px; margin-right: 7px;">To your surprise, most of the oral care products in the market today are created using cheap ingredients and synthetic chemicals. We're setting out to change that because the mouth is too critical to ignore for your overall health. So, to solve this exact problem, we started collaborating with multiple dentists, consumers and product designers to create a line of eco-friendly, ergonomic, organic, and technology-forward oral healthcare products.</p>
         </div>
         <div class="container5" style="flex: 1 1 50%; padding-right: 25px;">
-          <img src="../OUR STORY/photos/shop2.jpg" style="height: 400px;width: 100%; ">
+          <img src="OUR STORY/photos/shop2.jpg" style="height: 400px;width: 100%; ">
         </div>
       </div>
     </div>
@@ -72,7 +72,7 @@
     <div class="main1">
       <div class="container d-flex flex-wrap">
         <div class="container1" style="flex: 1 1 50%; padding-left: 25px;">
-          <img src="../OUR STORY/photos/shop3.jpg" style="height: 400px;width: 100%; ">
+          <img src="OUR STORY/photos/shop3.jpg" style="height: 400px;width: 100%; ">
         </div>
         <div class="container6" style="flex: 1 1 50%; background-color:skyblue; padding: 25px;">
           <h5 style="text-align: center;color: black;font-family: Arial, Helvetica, sans-serif;">Thus, Dr. Dento was born!</h5>
@@ -90,37 +90,37 @@
       <h2 style="text-align: center;color: black;font-family: Arial, Helvetica, sans-serif;"><b>Innovatively curated oral care that is</b></h2>
       <div class="container d-flex flex-wrap justify-content-center">
         <div class="img">
-          <a href="#"><img src="../OUR STORY/photos/Cfree.jpg" style="height: 250px;width: 250px; border-radius: 50%; background-color: white;">
+          <a href="#"><img src="OUR STORY/photos/Cfree.jpg" style="height: 250px;width: 250px; border-radius: 50%; background-color: white;">
           <h4 style="color: black; margin-top: 10px;"><b>Cruelty Free</b></h4>  
           </a>
         </div>
         <div class="img1">
-          <a href="#"><img src="../OUR STORY/photos/dentist.jpg" style="height: 250px;width: 250px; border-radius: 50%; background-color: white;">
+          <a href="#"><img src="/OUR STORY/photos/dentist.jpg" style="height: 250px;width: 250px; border-radius: 50%; background-color: white;">
           <h4 style="color: black; margin-top: 10px;"><b>Dentist Recommended</b></h4>  
           </a>
         </div>
         <div class="img2">
-          <a href="#"><img src="../OUR STORY/photos/eco.jpg" style="height: 250px;width: 250px; border-radius: 50%; background-color: white;">
+          <a href="#"><img src="OUR STORY/photos/eco.jpg" style="height: 250px;width: 250px; border-radius: 50%; background-color: white;">
           <h4 style="color: black; margin-top: 10px;padding-left: 50px;"><b>Eco Friendly</b></h4>  
           </a>
         </div>
         <div class="img3">
-          <a href="#"><img src="../OUR STORY/photos/design.jpg" style="height: 250px;width: 250px; border-radius: 50%; background-color: white;">
+          <a href="#"><img src="OUR STORY/photos/design.jpg" style="height: 250px;width: 250px; border-radius: 50%; background-color: white;">
           <h4 style="color: black; margin-top: 10px;"><b>Human Centric Design</b></h4>
           </a>
         </div>
         <div class="img4">
-          <a href="#"><img src="../OUR STORY/photos/vegan.jpg" style="height: 250px;width: 250px; border-radius: 50%; background-color: white;">
+          <a href="#"><img src="OUR STORY/photos/vegan.jpg" style="height: 250px;width: 250px; border-radius: 50%; background-color: white;">
           <h3 style="color: black; margin-top: 10px;margin-left: 70px;"><b>Vegan</b></h3>
           </a>
         </div>
         <div class="img5">
-          <a href="#"><img src="../OUR STORY/photos/tech.jpg" style="height: 250px;width: 250px; border-radius: 50%; background-color: white;">
+          <a href="#"><img src="OUR STORY/photos/tech.jpg" style="height: 250px;width: 250px; border-radius: 50%; background-color: white;">
           <h3 style="color: black; margin-top: 10px;"><b>Technology Driven</b></h3>
           </a>
         </div>
         <div class="img6">
-          <a href="#"><img src="../OUR STORY/photos/toxic.jpg" style="height: 250px;width: 250px; border-radius: 50%; background-color: white;">
+          <a href="#"><img src="OUR STORY/photos/toxic.jpg" style="height: 250px;width: 250px; border-radius: 50%; background-color: white;">
           <h3 style="color: black; margin-top: 10px;padding-left: 60px;"><b>Toxic-Free</b></h3>
           </a>
         </div>
