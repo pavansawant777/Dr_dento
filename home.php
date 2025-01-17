@@ -7,7 +7,9 @@ if (!isset($_SESSION['id'])) {
     header("Location:header.php"); // Redirect to login page if not logged in
     exit;
 }
+
 ?>
+<?php include 'header.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1169,5 +1171,6 @@ Toothbhrush are nice and best to try! Whitens teeth in some weeks
 
         setInterval(moveSlider, 3000);
     </script>
+    <?php include 'footer.php';?>
 </body>
 </html>
