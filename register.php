@@ -29,6 +29,15 @@ link {
 :root {
     --hs-swiper-theme-color: #007aff;
 }
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
 
 
 
@@ -909,19 +918,7 @@ form {
 :root {
     --hs-swiper-theme-color: #007aff;
 }
-body {
-    font-family: var(--font-body-family);
-    font-size: var(--font-body-size);
-    font-weight: var(--font-body-weight);
-    line-height: var(--body-line-height);
-    letter-spacing: var(--body-letter-spacing);
-    color: var(--color-text);
-    background: var(--color-background);
-    margin: 0 auto;
-    opacity: 1;
-    visibility: visible;
-    overflow-x: hidden;
-}
+ 
 @media (max-width: 551px) {
     .container, .container-1770, .container-1570, .container-1470, .container-1370, .container-1320, .container-1170 {
         padding-left: 10px;

@@ -366,11 +366,11 @@
   <form>
     <div class="form-group" style="margin-bottom: 15px;">
       <label for="email" style="font-weight: bold; display: block; color: black;">Email Address</label>
-      <input type="email" class="form-control" id="email" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Enter email">
+      <input type="email" class="form-control" id="email" name="email" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Enter email">
     </div>
     <div class="form-group" style="margin-bottom: 15px;">
       <label for="password" style="font-weight: bold; display: block; color: black;">Password</label>
-      <input type="password" class="form-control" id="password" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Enter password">
+      <input type="password" class="form-control" id="password" name="password" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Enter password">
     </div>
     <button type="submit" class="btn btn-primary login-btn">Login</button>
     <div class="form-group d-flex justify-content-between" style="margin-bottom: 15px; font-size: 0.9em;">
