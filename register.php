@@ -172,6 +172,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Insert new user into the database
             $stmt = $conn->prepare("INSERT INTO users (name, email, password) VALUES (:name, :email, :password)");
             $stmt->bindParam(':first_name', $firstname);
+            $stmt->bindParam(':last_name', $lastname);
             $stmt->bindParam(':last_email', $lastemail);
             $stmt->bindParam(':password', $hashed_password);
 
