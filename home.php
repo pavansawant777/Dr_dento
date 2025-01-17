@@ -1,6 +1,4 @@
  
- 
-?>
 <?php include 'header.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -1163,6 +1161,7 @@ Toothbhrush are nice and best to try! Whitens teeth in some weeks
 
         setInterval(moveSlider, 3000);
     </script>
-    <?php include 'footer.php';?>
+    
 </body>
 </html>
+<?php include 'footer.php';?>
