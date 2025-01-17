@@ -359,8 +359,53 @@
             <a href="likes.html"><i class="fa fa-heart"></i></a> <!-- Like Icon -->
             <a href="cart.html"><i class="fa fa-cart-shopping"></i></a> <!-- Cart Icon -->
           </div>
+          
+          
+    <!-- Sidebar for Login Form -->
+     <?php
+// Start session
+session_start();
 
-           <!-- Sidebar for Login Form -->
+// Database configuration
+$host = "localhost";
+$db_name = "dentodb";
+$username = "root";
+$password = "";
+
+try {
+    // Connect to the database
+    $conn = new PDO("mysql:host=$host;dbname=$db_name;charset=utf8", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Database connection failed: " . $e->getMessage());
+}
+
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = trim($_POST['email']);
+    $user_password = trim($_POST['password']);
+
+    if (!empty($email) && !empty($user_password)) {
+        // Fetch user from database
+        $stmt = $conn->prepare("SELECT * FROM users WHERE email = :email");
+        $stmt->bindParam(':email', $email);
+        $stmt->execute();
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if ($user && password_verify($user_password, $user['password'])) {
+            // Login successful
+            $_SESSION['id'] = $user['id'];
+            $_SESSION['email'] = $user['email'];
+            header("Location: home.php"); // Redirect to dashboard
+            exit;
+        } else {
+            $error_message = "Invalid email or password.";
+        }
+    } else {
+        $error_message = "Please fill in all fields.";
+    }
+}
+?>
 <div id="sidebar" class="sidebar" style="background-color: white; padding: 20px; color: #fff; width: 300px; border-radius: 10px;">
   <h2 style="text-align: center; margin-bottom: 20px;">Login</h2>
   <form>
