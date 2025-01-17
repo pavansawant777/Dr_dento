@@ -359,25 +359,71 @@
             <a href="likes.html"><i class="fa fa-heart"></i></a> <!-- Like Icon -->
             <a href="cart.html"><i class="fa fa-cart-shopping"></i></a> <!-- Cart Icon -->
           </div>
+          
+          
+    <!-- Sidebar for Login Form -->
+     <?php
+// Start session
+session_start();
 
-           <!-- Sidebar for Login Form -->
+// Database configuration
+$host = "localhost";
+$db_name = "dentodb";
+$username = "root";
+$password = "";
+
+try {
+    // Connect to the database
+    $conn = new PDO("mysql:host=$host;dbname=$db_name;charset=utf8", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Database connection failed: " . $e->getMessage());
+}
+
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = trim($_POST['email']);
+    $user_password = trim($_POST['password']);
+
+    if (!empty($email) && !empty($user_password)) {
+        // Fetch user from database
+        $stmt = $conn->prepare("SELECT * FROM users WHERE email = :email");
+        $stmt->bindParam(':email', $email);
+        $stmt->execute();
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if ($user && password_verify($user_password, $user['password'])) {
+            // Login successful
+            $_SESSION['id'] = $user['id'];
+            $_SESSION['email'] = $user['email'];
+            header("Location: home.php"); // Redirect to dashboard
+            exit;
+        } else {
+            $error_message = "Invalid email or password.";
+        }
+    } else {
+        $error_message = "Please fill in all fields.";
+    }
+}
+?>
 <div id="sidebar" class="sidebar" style="background-color: white; padding: 20px; color: #fff; width: 300px; border-radius: 10px;">
   <h2 style="text-align: center; margin-bottom: 20px;">Login</h2>
   <form>
     <div class="form-group" style="margin-bottom: 15px;">
       <label for="email" style="font-weight: bold; display: block; color: black;">Email Address</label>
-      <input type="email" class="form-control" id="email" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Enter email">
+      <input type="email" class="form-control" id="email" name="email" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Enter email">
     </div>
     <div class="form-group" style="margin-bottom: 15px;">
       <label for="password" style="font-weight: bold; display: block; color: black;">Password</label>
-      <input type="password" class="form-control" id="password" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Enter password">
+      <input type="password" class="form-control" id="password" name="password" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Enter password">
     </div>
     <button type="submit" class="btn btn-primary login-btn">Login</button>
     <div class="form-group d-flex justify-content-between" style="margin-bottom: 15px; font-size: 0.9em;">
       <a href="#" style="color: black; text-decoration: underline; margin-top: 10px;">Forgot Your Password?</a>
     </div>
     
-    <button type="button" class="btn btn-secondary">Create an Account</button>
+    <button type="button" class="btn btn-secondary" onclick="window.location.href='register.php';">Create an Account</button>
+
   </form>
 </div>
 
