@@ -112,7 +112,7 @@
           </a>
         </div>
         <div class="img4">
-          <a href="#"><img src="./photos/vegan.jpg" style="height: 250px;width: 250px; border-radius: 50%; background-color: white;">
+          <a href="#"><img src="/photos/vegan.jpg" style="height: 250px;width: 250px; border-radius: 50%; background-color: white;">
           <h3 style="color: black; margin-top: 10px;margin-left: 70px;"><b>Vegan</b></h3>
           </a>
         </div>
