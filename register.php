@@ -124,7 +124,7 @@
         <input type="password" id="confirm_password" name="confirm_password" required>
         
 
-            <button type="submit">Create Account</button>
+            <button  name="submit" type="submit">Create Account</button>
         </form>
     </div>
  
