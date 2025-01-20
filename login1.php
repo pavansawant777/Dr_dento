@@ -4,13 +4,13 @@ include 'config.php';
 
 if(isset($_POST['login'])){
    
-        $username =$_POST['username'];
+        $username =$_POST['useremail'];
        
         $user_password =$_POST['password'];
         
 
          // Check if email already exists
-         $dup_email=mysqli_query($con, "SELECT * FROM register WHERE email =$email");
+         $dup_email=mysqli_query($con, "SELECT * FROM register WHERE email ='$username' And password='$user_password'");
          
          if (mysqli_num_rows($dup_email)) {
             echo"
