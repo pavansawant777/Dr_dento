@@ -191,7 +191,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php if (!empty($error_message)) : ?>
         <p style="color: red;"><?php echo htmlspecialchars($error_message); ?></p>
     <?php endif; ?>
-    <form method="POST" action="">
+    <form method="POST" action="/submit_registration">
         <label for="name">First Name:</label>
         <input type="text" id="name" name="first_name" required>
         <br><br>

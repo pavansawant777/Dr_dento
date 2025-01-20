@@ -1,0 +1,20 @@
+<?php
+
+include 'config.php';
+
+if(isset($_POST['submit'])){
+   
+        $firstname =$_POST['first_name'];
+        $lastname =$_POST['last_name'];
+        $email = $_POST['email'];
+        $user_password =$_POST['password'];
+        $confirm_password = $_POST['confirm_password'];
+
+        mysqli_query($con, "INSERT INTO 'register' ('first_name', 'last_name','email','password', 'confirm_password')
+         VALUES ('$first_name','$last_name','$email','$password','$confirm_password') ");
+}
+
+ 
+
+
+    ?>
