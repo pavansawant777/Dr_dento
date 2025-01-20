@@ -12,6 +12,7 @@
   <style>
     .navbar {
       background-color: black;
+    
     }
     .navbar-brand, .nav-link {
       color: rgb(248, 242, 242) !important;
