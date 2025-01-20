@@ -103,11 +103,11 @@
     </style>
 </head>
 <body>
-  <!--  <div class="container">
+    <div class="container">
     <a class="back-button" href="header.php">Back </a>
         <h2>Create Account</h2>
         <p>Please register below to create an account</p>
-        <form action="/submit_registration" method="post">
+        <form action="submit_registration.php" method="post">
             <label for="first-name">First Name</label>
             <input type="text" id="first-name" name="first_name" required>
 
@@ -120,34 +120,16 @@
             <label for="password">Your Password</label>
             <input type="password" id="password" name="password" required>
 
+             <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+        
+
             <button type="submit">Create Account</button>
         </form>
-    </div>-->
+    </div>
  
   
-    <h2>Register</h2>
-    <?php if (!empty($error_message)) : ?>
-        <p style="color: red;"><?php echo htmlspecialchars($error_message); ?></p>
-    <?php endif; ?>
-    <form method="POST" action="/submit_registration.php">
-        <label for="name">First Name:</label>
-        <input type="text" id="name" name="first_name" required>
-        <br><br>
-        <label for="name">Last Name:</label>
-        <input type="text" id="name" name="last_name" required>
-        <br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br><br>
-        <label for="confirm_password">Confirm Password:</label>
-        <input type="password" id="confirm_password" name="confirm_password" required>
-        <br><br>
-        <button type="submit">Register</button>
-    </form>
-    <p>Already have an account? <a href="header.php">Login here</a>.</p>
+    
 </body>
 </html>
 
