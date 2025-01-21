@@ -1,5 +1,5 @@
+<?php include '/header.php';?>
 
-<?php include 'header.php';?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -12,7 +12,6 @@
   </head>
   <body>
     <a href="#"><img src="photos/Blogmain1.jpg" class="img-fluid" alt="..."></a>
-    
     
     <div class="marquee">
       <span>
