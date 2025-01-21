@@ -289,5 +289,6 @@
                 <img src="https://cdn.shopify.com/s/files/1/0666/5080/0412/files/sls-free.png?v=1703075362" alt="SLS Free">
             </div>
         </div>
-    </div>
-<?php include 'footer,php';?>
+    </div>lass="">
+<?php include 'footer.php';
+?>

@@ -1,6 +1,7 @@
  
-<?php include 'header.php'; ?>
-<!DOCTYPE html>
+<?php include 'header.php';
+ ?>
+ 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,13 +12,14 @@
             margin: 0;
             font-family: Arial, sans-serif;
             overflow-x: hidden;
-            background-color: #f4f4f9; /* Change background color to a light classic color */
+            background: url('https://www.example.com/path/to/your/background-image.jpg') no-repeat center center fixed; /* Add background image */
+            background-size: cover; /* Ensure the background image covers the entire page */
             color: #333; /* Change text color to a dark classic color */
         }
 
         /* Navigation Bar Styles */
         .nav-bar {
-            background: linear-gradient(90deg, rgba(0, 196, 204, 1) 0%, rgba(0, 150, 150, 1) 100%);
+            background: rgba(0, 196, 204, 0.9); /* Add transparency to the navigation bar */
             padding: 15px 30px;
             display: flex;
             justify-content: space-between;
@@ -42,7 +44,7 @@
         }
 
         .nav-bar:hover {
-            background: linear-gradient(90deg, rgba(0, 150, 150, 1) 0%, rgba(0, 196, 204, 1) 100%);
+            background: rgba(0, 150, 150, 0.9); /* Add transparency to the navigation bar on hover */
             color: white;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
@@ -231,7 +233,7 @@
         }
 
         .product {
-            background-color: #fff; /* Change product background color to white */
+            background-color: rgba(255, 255, 255, 0.9); /* Add transparency to the product background */
             border: 1px solid #ddd;
             border-radius: 10px;
             padding: 20px;
@@ -328,7 +330,7 @@
             gap: 20px; /* Spacing between products */
             padding: 20px;
             margin-top: 40px;
-            background-color: #f4f4f9; /* Change section background color to match body */
+            background-color: rgba(255, 255, 255, 0.9); /* Add transparency to the section background */
         }
 
         .newly-launched h2 {
@@ -356,7 +358,7 @@
         }
 
         .card {
-            background: #fff;
+            background-color: rgba(255, 255, 255, 0.9); /* Add transparency to the card background */
             border: 1px solid #ddd;
             border-radius: 10px;
             overflow: hidden;
@@ -401,7 +403,7 @@
         /* Instagram Reels Section Styles */
         .instagram-reels {
             padding: 40px 20px;
-            background-color: #fff; /* Change section background color to white */
+            background-color: rgba(255, 255, 255, 0.9); /* Add transparency to the section background */
             text-align: center;
         }
 
@@ -441,7 +443,7 @@
         /* Follow Us Section Styles */
         .follow-us {
             padding: 40px 20px;
-            background-color: #fff; /* Change section background color to white */
+            background-color: rgba(255, 255, 255, 0.9); /* Add transparency to the section background */
             text-align: center;
         }
 
@@ -470,7 +472,7 @@
         /* Follow Us on Instagram Section Styles */
         .follow-us-instagram {
             padding: 40px 20px;
-            background-color: #fff; /* Change section background color to white */
+            background-color: rgba(255, 255, 255, 0.9); /* Add transparency to the section background */
             text-align: center;
         }
 
@@ -569,54 +571,6 @@
 <body>
     <!-- Dr. Dento Text -->
     <div class="dr-dento-text">Dr. Dento</div>
-
-    <!-- Navigation Bar -->
-    <div class="nav-bar">
-        <div class="logo">
-            <img src="https://drdento.com/cdn/shop/files/Dr._Dento_with_Black_R_185x.png?v=1720175907" alt="Logo">
-            <span></span>
-        </div>
-        <div class="menu">
-            <div class="menu-item">
-                <a href="#">HOME</a>
-            </div>
-            <div class="menu-item">
-                <a href="#">SHOP</a>
-                <ul class="dropdown">
-                    <li>ALL</li>
-                    <li>Electric toothbrush</li>
-                    <li>Combos</li>
-                    <li>Toothpaste</li>
-                    <li>Toothbrush</li>
-                </ul>
-            </div>
-            <div class="menu-item">
-                <a href="#">BYOB</a>
-                <ul class="dropdown">
-                    <li>ALL</li>
-                    <li>BYOB@599</li>
-                    <li>BYOB@799</li>
-                    <li>BYOB@1199</li>
-                    <li>BYOB@1299</li>
-                </ul>
-            </div>
-            <div class="menu-item">
-                <a href="#">OUR STORY</a>
-            </div>
-            <div class="menu-item">
-                <a href="#">BLOGS</a>
-            </div>
-            <div class="menu-item">
-                <a href="#">CONTACT US</a>
-            </div>
-        </div>
-        <div class="icons">
-            <span class="search">&#128269;</span>
-            <span class="user">&#128100;</span>
-            <span class="favorites">&#10084;</span>
-            <span class="cart">&#128722;<span class="cart-count">3</span></span>
-        </div>
-    </div>
 
     <!-- Slider -->
     <div class="slider-container">
