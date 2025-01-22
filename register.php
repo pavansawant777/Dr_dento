@@ -1,3 +1,4 @@
+<?php include 'header.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -106,7 +107,7 @@
     <a class="back-button" href="header.php">Back </a>
         <h2>Create Account</h2>
         <p>Please register below to create an account</p>
-        <form action="/submit_registration" method="post">
+        <form action="submit_registration.php" method="post">
             <label for="first-name">First Name</label>
             <input type="text" id="first-name" name="first_name" required>
 
@@ -119,8 +120,19 @@
             <label for="password">Your Password</label>
             <input type="password" id="password" name="password" required>
 
-            <button type="submit">Create Account</button>
+             <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+        
+
+            <button  name="submit" type="submit">Create Account</button>
         </form>
     </div>
+ 
+  
+    
 </body>
 </html>
+
+</body>
+</html>
+<?php include 'footer.php';?>

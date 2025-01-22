@@ -1,5 +1,5 @@
+<?php include '../header.php';?>
 
-<?php include 'header.php';?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,9 +11,8 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <a href="#"><img src="photos/Blogmain1.jpg" class="img-fluid" alt="..."></a>
-    
-    
+    <a href="#"><img src="photos/Blogmain1.jpg" class="img-fluid" alt="..." width="100%"></a>
+
     <div class="marquee">
       <span>
         <h3>

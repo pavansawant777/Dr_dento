@@ -57,16 +57,16 @@
   <div class="sidebar-content">
     <button id="closeSidebar" class="btn btn-close">X</button>
     <h2>Login Form</h2>
-    <form action="login.php" method="post">
+    <form action="login1.php" method="post">
       <div class="mb-3">
         <label for="username" class="form-label">Username:</label>
-        <input type="text" class="form-control" id="username" name="username" required>
+        <input type="text" class="form-control" id="username" name="useremail" required>
       </div>
       <div class="mb-3">
         <label for="password" class="form-label">Password:</label>
         <input type="password" class="form-control" id="password" name="password" required>
       </div>
-      <button type="submit" class="btn btn-primary">Login</button>
+      <button name="login" type="submit" class="btn btn-primary">Login</button>
     </form>
   </div>
 </div>

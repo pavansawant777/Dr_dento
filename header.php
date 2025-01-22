@@ -12,7 +12,6 @@
   <style>
     .navbar {
       background-color: black;
-    
     }
     .navbar-brand, .nav-link {
       color: rgb(248, 242, 242) !important;
@@ -216,7 +215,7 @@
   <!-- Top Navigation bar -->
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Build Your Own Box @599</a>
+      <a class="navbar-brand" href="BYOB599.php">Build Your Own Box @599</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -239,7 +238,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 text-center text-md-end mt-3 mt-md-0">
-            <button class="btn btn-primary" id="shopNowBtn">Shop Now</button>
+            <button class="btn btn-primary" href="BYOB599.php" id="shopNowBtn">Shop Now</button>
           </div>
          
         </div>
@@ -268,7 +267,7 @@
       <div class="collapse navbar-collapse" id="secondaryNavbar">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="home.php">Home</a>
           </li>
           <li class="nav-item dropdown">
   <a class="nav-link dropdown-toggle" href="#" id="navbarShop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -276,38 +275,38 @@
   </a>
   <ul class="dropdown-menu" aria-labelledby="navbarShop">
     <li>
-      <a class="dropdown-item d-flex align-items-center" href="ALL.php">
+      <a class="dropdown-item d-flex align-items-center" href="shopp/ALL.php">
         <img src="https://cdn.shopify.com/s/files/1/0666/5080/0412/files/All_Products.svg?v=1724476997" alt="Shop 1 Logo" width="30" height="30" class="me-2">
         <span>All</span>
       </a>
     </li>
     <li><hr class="dropdown-divider"></li>
     <li>
-      <a class="dropdown-item d-flex align-items-center" href="Electribrush.php">
+      <a class="dropdown-item d-flex align-items-center" href="shopp/Electribrush.php">
         <img src="https://cdn.shopify.com/s/files/1/0666/5080/0412/files/Toothbrush.svg?v=1724476997" alt="Shop 2 Logo" width="30" height="30" class="me-2">
         <span>Electric Toothbrush</span>
       </a>
     </li><li><hr class="dropdown-divider"></li>
     <li>
-      <a class="dropdown-item d-flex align-items-center" href="Toothpaste.php">
+      <a class="dropdown-item d-flex align-items-center" href="shopp/Toothpaste.php">
         <img src="https://cdn.shopify.com/s/files/1/0666/5080/0412/files/Toothpaste.svg?v=1724476998" alt="Shop 3 Logo" width="30" height="30" class="me-2">
         <span>Toothpaste</span>
       </a>
     </li><li><hr class="dropdown-divider"></li>
     <li>
-      <a class="dropdown-item d-flex align-items-center" href="Mouthwash.php">
+      <a class="dropdown-item d-flex align-items-center" href="shopp/Mouthwash.php">
         <img src="https://cdn.shopify.com/s/files/1/0666/5080/0412/files/Mouthwash.svg?v=1724476997" alt="Shop 4 Logo" width="30" height="30" class="me-2">
         <span>MouthWash</span>
       </a>
     </li><li><hr class="dropdown-divider"></li>
     <li>
-      <a class="dropdown-item d-flex align-items-center" href="oil_pulling.php">
+      <a class="dropdown-item d-flex align-items-center" href="shopp/oil_pulling.php">
         <img src="https://cdn.shopify.com/s/files/1/0666/5080/0412/files/Oil_Pulling.svg?v=1728890421" alt="Shop 5 Logo" width="30" height="30" class="me-2">
         <span>Oil Pulling</span>
       </a>
     </li><li><hr class="dropdown-divider"></li>
     <li>
-      <a class="dropdown-item d-flex align-items-center" href="Combos.php">
+      <a class="dropdown-item d-flex align-items-center" href="shopp/Combos.php">
         <img src="https://cdn.shopify.com/s/files/1/0666/5080/0412/files/Combo.svg?v=1728890421" alt="Shop 6 Logo" width="30" height="30" class="me-2">
         <span>Combos</span>
       </a>
@@ -332,23 +331,23 @@
         <span>All</span>
       </a>
     </li>
-    <li><a class="dropdown-item" href="BYOB599.php">BYOB@599</a></li>
-    <li><a class="dropdown-item" href="BYOB799.php">BYOB@799</a></li>
-    <li><a class="dropdown-item" href="BYBO999.php">BYOB@999</a></li>
-    <li><a class="dropdown-item" href="BYOB1299.php">BYOB@1299</a></li>
-    <li><a class="dropdown-item" href="BYBO1999.php">BYOB@1999</a></li>
+    <li><a class="dropdown-item" href="BYBO/BYOB599.php">BYOB@599</a></li>
+    <li><a class="dropdown-item" href="BYBO/BYOB799.php">BYOB@799</a></li>
+    <li><a class="dropdown-item" href="BYBO/BYBO999.php">BYOB@999</a></li>
+    <li><a class="dropdown-item" href="BYBO/BYOB1299.php">BYOB@1299</a></li>
+    <li><a class="dropdown-item" href="BYBO/BYBO1999.php">BYOB@1999</a></li>
     
   </ul>
 </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="OUR STORY.php">Our Story</a>
+            <a class="nav-link" href="OURSTORY/ourstory.php">Our Story</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="blogs.php">Blogs</a>
+            <a class="nav-link" href="blogs/blogs.php">Blogs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link contact-us-link" href="#">Contact Us</a>
+            <a class="nav-link contact-us-link" href="Contactus.php">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -358,20 +357,22 @@
             <a href="search.html"><i class="fa fa-magnifying-glass"></i></a> <!-- Search Icon -->
             <a href="#" id="loginIcon"><i class="fa fa-user"></i></a>
             <a href="likes.html"><i class="fa fa-heart"></i></a> <!-- Like Icon -->
-            <a href="cart.html"><i class="fa fa-cart-shopping"></i></a> <!-- Cart Icon -->
+            <a href=".html"><i class="fa fa-cart-shopping"></i></a> <!-- Cart Icon -->
           </div>
-
-           <!-- Sidebar for Login Form -->
+          
+          
+    <!-- Sidebar for Login Form -->
+     
 <div id="sidebar" class="sidebar" style="background-color: white; padding: 20px; color: #fff; width: 300px; border-radius: 10px;">
   <h2 style="text-align: center; margin-bottom: 20px;">Login</h2>
   <form>
     <div class="form-group" style="margin-bottom: 15px;">
       <label for="email" style="font-weight: bold; display: block; color: black;">Email Address</label>
-      <input type="email" class="form-control" id="email" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Enter email">
+      <input type="email" class="form-control" id="email" name="email" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Enter email">
     </div>
     <div class="form-group" style="margin-bottom: 15px;">
       <label for="password" style="font-weight: bold; display: block; color: black;">Password</label>
-      <input type="password" class="form-control" id="password" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Enter password">
+      <input type="password" class="form-control" id="password" name="password" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Enter password">
     </div>
     <button type="submit" class="btn btn-primary login-btn">Login</button>
     <div class="form-group d-flex justify-content-between" style="margin-bottom: 15px; font-size: 0.9em;">
